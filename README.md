@@ -1,2 +1,2 @@
 # DisMu
-Discord Music Bot
+A Discord Music bot with the ability to configure the bot via a local UI
