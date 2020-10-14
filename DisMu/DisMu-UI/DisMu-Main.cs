@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace DisMu_UI
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         public Form1()
         {
             InitializeComponent();
+
+            MaterialSkinManager skinManager = MaterialSkinManager.Instance;
+            skinManager.AddFormToManage(this);
+            skinManager.Theme = MaterialSkinManager.Themes.DARK;
         }
     }
 }
