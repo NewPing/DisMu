@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisMu-UI", "DisMu-UI\DisMu-UI.csproj", "{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisMu-Service", "DisMu-Service\DisMu-Service.csproj", "{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisMu-Service", "DisMu-Service\DisMu-Service.csproj", "{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
