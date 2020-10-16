@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisMu-UI", "DisMu-UI\DisMu-UI.csproj", "{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisMu-Service", "DisMu-Service\DisMu-Service.csproj", "{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisMu-UI", "DisMu-UI\DisMu-UI.csproj", "{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F51DE85A-5D56-43EF-BCFE-97D9108CBAFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A848ADA3-F0E4-4618-8C01-1FBB81E2DC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85D5AE08-4EB8-470E-B39A-B531CC9AF1DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
