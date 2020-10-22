@@ -23,7 +23,7 @@ namespace DisMu_Service.Controllers
             return null;
         }
 
-        public ActionResult<bool> addPlaylist(string)
+        public ActionResult<bool> addPlaylist(string _title)
         {
             return false;
         }
