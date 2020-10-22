@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DisMu_UI
@@ -8,14 +9,14 @@ namespace DisMu_UI
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DisMuMain());
+            Application.Run(new DisMu_Main());
         }
     }
 }
