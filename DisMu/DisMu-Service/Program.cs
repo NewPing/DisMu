@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DisMu_Service.Discord;
+using DisMu_Service.Manager;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -11,9 +13,29 @@ namespace DisMu_Service
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            try
+            {
+                SettingsManager.Init();
+
+                if (SettingsManager.validSettings)
+                {
+                    DisMuBot.StartDisMuBot();
+
+                    CreateHostBuilder(args).Build().Run();
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Settings detected...\n-> Stopping...");
+                    System.Environment.Exit(1);
+                }
+            } catch (Exception ex)
+            {
+                Console.WriteLine("Exception in Program.Main: " + ex);
+                System.Environment.Exit(-1);
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
