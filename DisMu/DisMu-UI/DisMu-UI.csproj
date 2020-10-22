@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LeftSide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LeftSide.Designer.cs">
+      <DependentUpon>LeftSide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RightSide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RightSide.Designer.cs">
+      <DependentUpon>RightSide.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisMu_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\LeftSide.resx">
+      <DependentUpon>LeftSide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\RightSide.resx">
+      <DependentUpon>RightSide.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisMu_Main.resx">
       <DependentUpon>DisMu_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +84,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,6 +108,11 @@
       <Project>{f539d501-8ba3-45e1-a96b-20b299a9e8bf}</Project>
       <Name>DisMu-Base</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,6 @@ namespace DisMu_Base.Models
     {
         public Guid id { get; set; }
         public string name { get; set; }
-        public Dictionary<int, Guid> tracks { get; set; }
+        public Dictionary<int, Track> tracks { get; set; }
     }
 }
