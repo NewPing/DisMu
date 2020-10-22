@@ -1019,4 +1019,4 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore,windows,csharp,visualstudio
 
-settings.json
+DisMu/DisMu-Service/settings.json
