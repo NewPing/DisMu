@@ -20,7 +20,12 @@ namespace DisMu_Service
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .ConfigureKestrel((context, options) =>
+                    {
+                        options.Limits.MaxRequestHeaderCount = 1048576;
+                        options.Limits.MaxRequestHeadersTotalSize = 1048576;
+                    });
                 });
     }
 }
