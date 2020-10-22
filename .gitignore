@@ -859,6 +859,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+settings.json
+
 ### VisualStudio ###
 
 # User-specific files
