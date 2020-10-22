@@ -11,6 +11,11 @@ namespace DisMu_Service.Manager
 {
     public static class SettingsManager
     {
+        #if DEBUG
+        private static string settingsPath = File.ReadAllText(Path.GetFullPath(@"..\..\") + "settings.json");
+        #else
+        private static string settingsPath = File.ReadAllText("settings.json");
+        #endif
         public static Settings settings = null;
         public static bool validSettings = false;
 
@@ -24,15 +29,15 @@ namespace DisMu_Service.Manager
         {
             try
             {
-                if (File.Exists("settings.json"))
+                if (File.Exists(settingsPath))
                 {
-                    var json = File.ReadAllText("settings.json");
+                    var json = File.ReadAllText(settingsPath);
                     settings = JsonSerializer.Deserialize<Settings>(json);
                 }
                 else
                 {
                     var json = JsonSerializer.Serialize(new Settings());
-                    File.WriteAllText("settings.json", json);
+                    File.WriteAllText(settingsPath, json);
                 }
             }
             catch (Exception ex)

@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Lavalink4NET" Version="1.5.3" />
     <PackageReference Include="Lavalink4NET.Discord.NET" Version="1.5.3" />
     <PackageReference Include="Lavalink4NET.MemoryCache" Version="1.5.3" />
