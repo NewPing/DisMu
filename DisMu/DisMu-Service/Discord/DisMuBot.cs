@@ -10,7 +10,6 @@ namespace DisMu_Service.Discord
     {
         public static void StartDisMuBot()
         {
-            
 
         }
     }
