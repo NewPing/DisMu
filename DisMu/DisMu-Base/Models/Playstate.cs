@@ -2,7 +2,7 @@
 
 namespace DisMu_Base.Models
 {
-    public static class Playstate
+    public class Playstate
     {
         public static Guid currentPlaylist { get; set; }
         public static Guid currentTrack { get; set; }
