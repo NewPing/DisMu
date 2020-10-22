@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DisMu_Base.Models;
 
 namespace DisMu_UI
 {

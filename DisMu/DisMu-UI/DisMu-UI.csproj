@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DisMu-Base\DisMu-Base.csproj">
+      <Project>{f539d501-8ba3-45e1-a96b-20b299a9e8bf}</Project>
+      <Name>DisMu-Base</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
