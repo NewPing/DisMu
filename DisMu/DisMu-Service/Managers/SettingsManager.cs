@@ -12,9 +12,9 @@ namespace DisMu_Service.Manager
     public static class SettingsManager
     {
         #if DEBUG
-        private static string settingsPath = File.ReadAllText(Path.GetFullPath(@"..\..\") + "settings.json");
+        private static string settingsPath = Path.GetFullPath(@"..\..\") + "settings.json";
         #else
-        private static string settingsPath = File.ReadAllText("settings.json");
+        private static string settingsPath = "settings.json";
         #endif
         public static Settings settings = null;
         public static bool validSettings = false;

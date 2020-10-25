@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using DisMu_Service.Discord;
 using DisMu_Service.Manager;
@@ -22,9 +23,16 @@ namespace DisMu_Service
 
                 if (SettingsManager.validSettings)
                 {
-                    DisMuBot.StartDisMuBot();
+                    DisMuBot.StartDisMuBot().GetAwaiter().GetResult();
 
-                    CreateHostBuilder(args).Build().Run();
+                    if (DisMuBot.DisMuBotStarted)
+                    {
+                        CreateHostBuilder(args).Build().Run();
+                        Thread.Sleep(-1);
+                    } else
+                    {
+                        Console.WriteLine("Failed to start DisMu-Discord instance...\n-> Stopped...");
+                    }
                 }
                 else
                 {
