@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.2.0" />
     <PackageReference Include="Lavalink4NET" Version="1.5.3" />
     <PackageReference Include="Lavalink4NET.Discord.NET" Version="1.5.3" />
     <PackageReference Include="Lavalink4NET.MemoryCache" Version="1.5.3" />
@@ -26,6 +27,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="NSwag.AspNetCore" Version="13.8.2" />
+    <PackageReference Include="Victoria" Version="5.1.9" />
   </ItemGroup>
 
   <ItemGroup>

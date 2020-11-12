@@ -37,13 +37,12 @@ namespace DisMu_Service
                 else
                 {
                     Console.WriteLine("Invalid Settings detected...\n-> Stopping...");
-                    System.Environment.Exit(1);
                 }
             } catch (Exception ex)
             {
                 Console.WriteLine("Exception in Program.Main: " + ex);
-                System.Environment.Exit(-1);
             }
+            System.Environment.Exit(1);
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

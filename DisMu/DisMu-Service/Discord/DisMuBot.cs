@@ -2,11 +2,14 @@
 using Discord.WebSocket;
 using DisMu_Service.Classes;
 using DisMu_Service.Manager;
+using Lavalink4NET;
+using Lavalink4NET.DiscordNet;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Victoria;
 
 namespace DisMu_Service.Discord
 {
@@ -15,7 +18,9 @@ namespace DisMu_Service.Discord
         public static bool DisMuBotStarted = false;
         public static DiscordSocketClient _client;
         public static IServiceProvider _services;
+        public static LavalinkNode _audioService;
         private static Commands _commands;
+        public static LavaNode _lavaNode;
 
         public static async Task StartDisMuBot()
         {
@@ -36,6 +41,26 @@ namespace DisMu_Service.Discord
                 await _client.LoginAsync(TokenType.Bot, SettingsManager.settings.DiscordToken);
 
                 await _client.StartAsync();
+
+                //Victoria related stuff
+                var services = new ServiceCollection()
+                // Other services DiscordSocketClient, CommandService, etc
+                .AddLavaNode(x => {
+                    x.SelfDeaf = false;
+                });
+
+                LavaConfig lavaConfig = new LavaConfig();
+
+                _lavaNode = new LavaNode(_client, lavaConfig);
+
+                _client.Ready += () =>
+                {
+                    if (!_lavaNode.IsConnected)
+                    {
+                        _lavaNode.ConnectAsync();
+                    }
+                    return Task.CompletedTask;
+                };
 
                 DisMuBotStarted = true;
             } catch (Exception ex)
