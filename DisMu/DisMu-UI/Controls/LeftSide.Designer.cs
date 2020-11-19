@@ -54,9 +54,10 @@
             // labelTitleLeft
             // 
             this.labelTitleLeft.AutoSize = true;
-            this.labelTitleLeft.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.labelTitleLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.labelTitleLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitleLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitleLeft.ForeColor = System.Drawing.Color.White;
             this.labelTitleLeft.Location = new System.Drawing.Point(0, 0);
             this.labelTitleLeft.Margin = new System.Windows.Forms.Padding(0);
             this.labelTitleLeft.Name = "labelTitleLeft";
@@ -67,12 +68,14 @@
             // 
             // listLeftSide
             // 
-            this.listLeftSide.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.listLeftSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.listLeftSide.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listLeftSide.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listLeftSide.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listLeftSide.HideSelection = false;
+            this.listLeftSide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(170)))), ((int)(((byte)(181)))));
             this.listLeftSide.Location = new System.Drawing.Point(0, 42);
             this.listLeftSide.Margin = new System.Windows.Forms.Padding(0);
+            this.listLeftSide.MultiSelect = false;
             this.listLeftSide.Name = "listLeftSide";
             this.listLeftSide.Size = new System.Drawing.Size(782, 384);
             this.listLeftSide.TabIndex = 1;

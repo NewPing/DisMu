@@ -53,10 +53,10 @@
             // labelTitleRight
             // 
             this.labelTitleRight.AutoSize = true;
-            this.labelTitleRight.BackColor = System.Drawing.Color.Navy;
+            this.labelTitleRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.labelTitleRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitleRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitleRight.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.labelTitleRight.ForeColor = System.Drawing.Color.White;
             this.labelTitleRight.Location = new System.Drawing.Point(0, 0);
             this.labelTitleRight.Margin = new System.Windows.Forms.Padding(0);
             this.labelTitleRight.Name = "labelTitleRight";
@@ -67,8 +67,10 @@
             // 
             // listRightSide
             // 
-            this.listRightSide.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.listRightSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.listRightSide.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listRightSide.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listRightSide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(170)))), ((int)(((byte)(181)))));
             this.listRightSide.HideSelection = false;
             this.listRightSide.Location = new System.Drawing.Point(0, 61);
             this.listRightSide.Margin = new System.Windows.Forms.Padding(0);
