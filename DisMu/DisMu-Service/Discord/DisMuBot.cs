@@ -58,6 +58,7 @@ namespace DisMu_Service.Discord
                     if (!_lavaNode.IsConnected)
                     {
                         _lavaNode.ConnectAsync();
+
                     }
                     return Task.CompletedTask;
                 };
